@@ -8,7 +8,7 @@
     <style type="text/css">
         *{
             font-family: system-ui;
-            transition-duration: 0.14s;
+            transition-duration: 0.18s;
         }
         body{
             background-color: #7ac3fb;
@@ -18,7 +18,7 @@
             margin: 0;
         }
         .main{
-            background-color: rgba(255, 255, 255, 0.84);
+            background-color: #ffffffd6;
             /*-webkit-backdrop-filter: blur(8px);
             backdrop-filter: blur(8px);*/
             width: 320px;
@@ -37,9 +37,9 @@
             width: calc( 100% - 40px );
             height: auto;
             text-align: center;
-            margin-top: 30px;
+            margin-top: 20px;
             margin-left: 20px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
         .avatar{
             border-radius: 20px;
@@ -111,20 +111,20 @@
                 color: #fff;
             }
             .main{
-                background-color: rgba(0, 0, 0, 0.6);
+                background-color: #00000099;
             }
             hr{
                 background-color: gray;
             }
             .button_1{
-                background-color: #007bffab;
-                outline-color: #003977;
+                background-color: #007bfff0;
+                outline-color: #004289;
             }
             .button_1:hover{
-                background-color: #007bff8b;
+                background-color: #007bffd2;
             }
             .button_1:active{
-                background-color: #007bff70;
+                background-color: #007bffac;
             }
             .fieldset_1{
                 border-color:#3b5878;
@@ -175,6 +175,13 @@
                             </button>
                         </a>
                     </div>
+                    <div>
+                        <a href="https://q8p.cc/codelabprojects" target="_blank" rel="noopener">
+                            <button class="button_1" style="padding: 0;">
+                                <img src="logo/codelab.min.png" alt="CodeLab" style="height: 52px;">
+                            </button>
+                        </a>
+                    </div>
                 </fieldset>
             </div>
             <hr>
@@ -187,7 +194,7 @@
             Copyright.innerHTML = Copyright.innerHTML.replace('2023', `2023-${year}`);
 
         divmain.style.display = '';
-        divmain.style.height = document.getElementById("divmain2").clientHeight + 60 ;
+        divmain.style.height = document.getElementById("divmain2").clientHeight + 40 ;
     </script>
 </body>
 </html>

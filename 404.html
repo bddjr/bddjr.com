@@ -1,0 +1,123 @@
+<html lang="zh-cn">
+<head>
+    <title>半岛的蒟蒻</title>
+    <link rel="shortcut icon" href="avatar-256x256.webp" type="image/x-icon">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style type="text/css">
+        *{
+            font-family: system-ui;
+            transition-duration: 0.18s;
+        }
+        body{
+            background-color: #7ac3fb;
+            margin: 0;
+        }
+        div{
+            margin: 0;
+        }
+        .main{
+            background-color: #ffffffd6;
+            /*-webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);*/
+            width: 320px;
+            /*height: auto!important;*/
+            flex: 1;
+            /*box-shadow: 0 5px 20px 0 #ffffff;*/
+            border-radius: 20px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+        .main2{
+            width: calc( 100% - 40px );
+            height: auto;
+            text-align: center;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        hr{
+            background-color: lightgray;
+            height: 2px;
+            border: none;
+            margin: 14px 0;
+        }
+        .button_1{
+            border-radius: 10px;
+            border:none;
+            padding: 8px 0px;
+            margin: 0;
+            font-size: 20px;
+            background-color: #007bff;
+            /*color:black;*/
+            transition-duration: 0.18s;
+            width: 100%;
+            outline-style: solid;
+            outline-width: 2px;
+            outline-color: #007bff;
+            height: 48px;
+            cursor: pointer;
+            color: #fff;
+        }
+        .button_1:hover{
+            background-color: #007bff44;
+        }
+        .button_1:active{
+            background-color: #007bff77;
+        }
+        .button_1 img{
+            height: 32px;
+        }
+        a{
+            text-decoration: none;
+        }
+        @media (prefers-color-scheme: dark){
+            body{
+                background-color: #153a55;
+                margin: 0;
+            }
+            p{
+                color: #fff;
+            }
+            .main{
+                background-color: #00000099;
+            }
+            hr{
+                background-color: gray;
+            }
+            .button_1{
+                background-color: #007bfff0;
+                outline-color: #004289;
+            }
+            .button_1:hover{
+                background-color: #007bffd2;
+            }
+            .button_1:active{
+                background-color: #007bffac;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="divmain" class="main" style="display: none;">
+        <div id="divmain2" class="main2">
+            <p style="font-size: 28px;margin: 0 auto;"> 404 Not Found </p>
+            <p style="margin: 0 auto;"> 找不到页面 </p>
+            <hr>
+            <a href="/"><button class="button_1"> 点此返回首页 </button></a>
+        </div>
+    </div>
+    <script>
+        let year = new Date().getFullYear();
+        if( year != 2023 )
+            Copyright.innerHTML = Copyright.innerHTML.replace('2023', `2023-${year}`);
+
+        divmain.style.display = '';
+        divmain.style.height = document.getElementById("divmain2").clientHeight + 40 ;
+    </script>
+</body>
+</html>
