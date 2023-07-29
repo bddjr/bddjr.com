@@ -5,10 +5,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <META name="keywords" content="半岛的蒟蒻,bddjr,bddjrcn,半岛的蒟蒻bddjr,bddjr.cn,bandaodejuruo">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <style type="text/css">
+    <style id="css_transition_duration"></style>
+    <style>
         *{
             font-family: system-ui;
-            transition-duration: 0.18s;
         }
         body{
             background-color: #7ac3fb;
@@ -85,10 +85,10 @@
             cursor: pointer;
         }
         .button_1:hover{
-            background-color: #007bff44;
+            background-color: #007bff2d;
         }
         .button_1:active{
-            background-color: #007bff77;
+            background-color: #007bff4f;
         }
         .button_1 img{
             height: 32px;
@@ -111,14 +111,14 @@
                 background-color: gray;
             }
             .button_1{
-                background-color: #2d92ffc8;
+                background-color: #d5e8ffdf;
                 outline-color: #004289;
             }
             .button_1:hover{
-                background-color: #2890ffb8;
+                background-color: #b8d8ffdf;
             }
             .button_1:active{
-                background-color: #2d92ff92;
+                background-color: #95c5ffdf;
             }
             .fieldset_1{
                 border-color:#3b5878;
@@ -131,9 +131,11 @@
     </style>
 </head>
 <body>
-    <div id="divmain" class="main" style="height: 530px;">
+    <div id="divmain" class="main">
         <div id="divmain2" class="main2">
-            <img src="/avatar-256x256.webp" class="avatar" alt="avatar">
+            <a href="/avatar-256x256.webp" title="/avatar-256x256.webp" target="_blank" rel="noopener">
+                <img src="/avatar-256x256.webp" class="avatar" alt="avatar">
+            </a>
             <p style="font-size: 26px; margin: 8px auto 8px;"> 半岛的蒟蒻bddjr </p>
             <p style="font-size: 14px; margin-top: 0; color:#888;"> “唯有理智最为可贵” </p>
             <p> 一个什么都不会的东西。 </p>
@@ -183,9 +185,12 @@
         </div>
     </div>
     <script>
-        let year = new Date().getFullYear();
-        if( year != 2023 ) Copyright.innerHTML = Copyright.innerHTML.replace('2023', `2023-${year}`);
         divmain.style.height = divmain2.clientHeight + 40 ;
+        {
+            let year = new Date().getFullYear();
+            if( year != 2023 ) Copyright.innerHTML = Copyright.innerHTML.replace('2023', `2023-${year}`);
+        }
+        css_transition_duration.innerHTML = '*{transition-duration: 0.18s}';
     </script>
 </body>
 </html>
