@@ -96,7 +96,7 @@
         divmain.style.height = divmain2.clientHeight + 40 ;
         (window.onresize = ()=>{
             divmain.style.bottom = 
-                (window.innerHeight < divmain.clientHeight)
+                (window.innerHeight <= divmain.clientHeight)
                 ? ''
                 : 0
             ;
