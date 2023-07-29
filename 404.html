@@ -23,7 +23,7 @@
             position: absolute;
             top: 0;
             right: 0;
-            bottom: 0;
+            /*bottom: 0;*/
             left: 0;
             margin: auto;
         }
@@ -94,6 +94,13 @@
     </div>
     <script>
         divmain.style.height = divmain2.clientHeight + 40 ;
+        (window.onresize = ()=>{
+            divmain.style.bottom = 
+                (window.innerHeight < divmain.clientHeight)
+                ? ''
+                : 0
+            ;
+        })();
         css_transition_duration.innerHTML = '*{transition-duration: 0.18s}';
     </script>
 </body>

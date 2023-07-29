@@ -24,7 +24,7 @@
             position: absolute;
             top: 0;
             right: 0;
-            bottom: 0;
+            /*bottom: 0;*/
             left: 0;
             margin: auto;
         }
@@ -190,6 +190,13 @@
             let year = new Date().getFullYear();
             if( year != 2023 ) Copyright.innerHTML = Copyright.innerHTML.replace('2023', `2023-${year}`);
         }
+        (window.onresize = ()=>{
+            divmain.style.bottom = 
+                (window.innerHeight < divmain.clientHeight)
+                ? ''
+                : 0
+            ;
+        })();
         css_transition_duration.innerHTML = '*{transition-duration: 0.18s}';
     </script>
 </body>
