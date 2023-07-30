@@ -37,14 +37,15 @@
             margin-left: 20px;
             margin-bottom: 20px;
         }
-        .cover{
+        .cover_img{
             width: 100%;
+            height: 240px;
             background-color: gray;
         }
         .avatar{
             border-radius: 20px;
-            width: 112px;
-            height: 112px;
+            width: 112;
+            height: 112;
             background-color: gray;
         }
         hr{
@@ -112,8 +113,24 @@
         .button_ccw:active{
             background-color: #1b1b1b;
         }
+        .Copyright{
+            font-size: 14px;
+            margin: 0 auto 4;
+            color:#888;
+        }
         a{
             text-decoration: none;
+        }
+        .a_repository{
+            text-decoration: underline;
+            color:#888;
+            font-size: 14px;
+        }
+        .a_repository:hover{
+            color: #555;
+        }
+        .a_repository:active{
+            color: #111;
         }
         @media (prefers-color-scheme: dark){
             body{
@@ -156,12 +173,12 @@
         <div id="divmain3" style="overflow: hidden; height: 160;">
             <div style="margin-top: -26;">
                 <a href="https://m.ccw.site/user_projects_assets/025375563ccdfbb3e07be18451a5b7b2.jpg" target="_blank" rel="noopener">
-                    <img alt src="https://m.ccw.site/user_projects_assets/025375563ccdfbb3e07be18451a5b7b2.jpg" class="cover">
+                    <img alt src="https://m.ccw.site/user_projects_assets/025375563ccdfbb3e07be18451a5b7b2.jpg" class="cover_img">
                 </a>
             </div>
         </div>
         <div id="divmain2" class="main2">
-            <a href="/avatar-256x256.webp" title="/avatar-256x256.webp" target="_blank" rel="noopener">
+            <a href="/avatar-256x256.webp" target="_blank" rel="noopener">
                 <img src="/avatar-256x256.webp" class="avatar" alt="avatar">
             </a>
             <p style="font-size: 26px; margin: 8px auto 8px;"> 半岛的蒟蒻bddjr </p>
@@ -217,11 +234,12 @@
                 </fieldset>
             </div>
             <hr>
-            <p id="Copyright" style="font-size: 14px; margin: 10px auto 0; color:#888;"> Copyright © 2023 bddjr. </p>
+            <p id="Copyright" class="Copyright"> Copyright © 2023 bddjr. </p>
+            <a href="https://github.com/bddjr/bddjr.cn" target="_blank" rel="noopener" class="a_repository"> 源码仓库 </a>
         </div>
     </div>
     <script>
-        divmain.style.height = divmain2.clientHeight + divmain3.clientHeight + 25 ;
+        divmain.style.height = divmain2.clientHeight + divmain3.clientHeight + 26 ;
         {
             let year = new Date().getFullYear();
             if( year != 2023 ) Copyright.innerHTML = Copyright.innerHTML.replace('2023', `2023-${year}`);
