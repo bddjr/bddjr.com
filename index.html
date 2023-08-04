@@ -39,7 +39,6 @@
         }
         .cover_img{
             width: 100%;
-            height: 240px;
             background-color: gray;
         }
         .avatar{
@@ -86,7 +85,7 @@
         .button_1{
             border-radius: 8px;
             border:none;
-            padding: 0 0px;
+            padding: 0;
             margin: 0;
             font-size: 20px;
             transition-duration: 0.18s;
@@ -109,7 +108,7 @@
         }
         .button_1 img{
             height: 32px;
-            margin: 4px 0;
+            margin: 0;
         }
         .button_ccw{
             background-color: #373737;
@@ -177,12 +176,12 @@
 </head>
 <body>
     <div id="divmain" class="main">
-        <div id="divmain3" style="overflow: hidden; height: 160;">
-            <div style="margin-top: -50;">
-                <a href="https://m.ccw.site/user_projects_assets/025375563ccdfbb3e07be18451a5b7b2.jpg" target="_blank" rel="noopener">
-                    <img src="https://m.ccw.site/user_projects_assets/025375563ccdfbb3e07be18451a5b7b2.jpg" class="cover_img" alt="cover">
-                </a>
-            </div>
+        <div id="divmain3" style="overflow: hidden;">
+            <!-- /IMG_20200807_190325.jpg -->
+            <a href="https://m.ccw.site/user_projects_assets/025375563ccdfbb3e07be18451a5b7b2.jpg" target="_blank" rel="noopener">
+                <!-- /IMG_20200807_190325_960x480.jpg -->
+                <img src="https://m.ccw.site/user_projects_assets/4cd1d57cf96ba2b3cd3b4ac0f0961c3e.jpg" class="cover_img" alt="cover" id="cover_img">
+            </a>
         </div>
         <div id="divmain2" class="main2">
             <div class="avatar avatar_div">
@@ -226,10 +225,8 @@
                     </div>
                     <div>
                         <a href="https://q8p.cc/codelabprojects" title="CodeLab" target="_blank" rel="noopener">
-                            <button class="button_1 button_default" style="padding: 0;">
-                                <div style="overflow: hidden; height: 40px; margin-top: 0;">
-                                    <img src="logo/codelab-128x128.png" alt="CodeLab" style="height: 52px; margin-top: -4px;">
-                                </div>
+                            <button class="button_1 button_default">
+                                <img src="logo/codelab-128x128.min.png" alt="CodeLab" style="height: 38; margin: -3 0;">
                             </button>
                         </a>
                     </div>
@@ -248,11 +245,14 @@
         </div>
     </div>
     <script>
-        divmain.style.height = divmain2.clientHeight + divmain3.clientHeight + 26 ;
         {
             let year = new Date().getFullYear();
             if( year != 2023 ) Copyright.innerHTML = Copyright.innerHTML.replace('2023', `2023-${year}`);
         }
+        cover_img.style.height = cover_img.clientWidth / 960 * 480 ;
+
+        divmain.style.height = divmain2.clientHeight + divmain3.clientHeight + 26 ;
+
         (window.onresize = ()=>{
             divmain.style.bottom =
                 (window.innerHeight <= divmain.clientHeight)
@@ -260,6 +260,7 @@
                 : 0
             ;
         })();
+
         css_transition_duration.innerHTML = '*{transition-duration: 0.18s}';
     </script>
 </body>
