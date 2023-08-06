@@ -14,9 +14,6 @@
             background-color: #7ac3fb;
             margin: 0;
         }
-        div{
-            margin: 0;
-        }
         .main{
             background-color: #ffffffd6;
             width: 320px;
@@ -224,7 +221,7 @@
                         </a>
                     </div>
                     <div>
-                        <a href="https://q8p.cc/codelabprojects" title="CodeLab" target="_blank" rel="noopener alt="CodeLab">
+                        <a href="https://q8p.cc/codelab" title="CodeLab" target="_blank" rel="noopener" alt="CodeLab">
                             <button class="button_1 button_default" tabindex="-1">
                                 <img src="logo/codelab-128x128.min.png" alt="CodeLab" style="height: 38; margin: -3 0;" tabindex="-1">
                             </button>
@@ -249,7 +246,7 @@
             let year = new Date().getFullYear();
             if( year != 2023 ) Copyright.innerHTML = Copyright.innerHTML.replace('2023', `2023-${year}`);
         }
-        cover_img.style.height = cover_img.clientWidth / 960 * 480 ;
+        cover_img.style.height = cover_img.clientWidth / 2 ; // 960 * 480 ;
 
         divmain.style.height = divmain.clientHeight;
 
