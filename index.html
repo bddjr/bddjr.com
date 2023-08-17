@@ -4,7 +4,7 @@
     <title> 半岛的蒟蒻bddjr </title>
     <link rel="icon" href="/avatar-256x256.webp"/>
     <meta name="keywords" content="半岛的蒟蒻,bddjr,bddjrcn,半岛的蒟蒻bddjr,bddjr.cn,bandaodejuruo"/>
-    <meta name="description" content="半岛的蒟蒻bddjr的个人网站，欢迎进来看看ヾ(^▽^*)))"/>
+    <meta name="description" content="半岛的蒟蒻bddjr的个人网站，欢迎进来看看:D    "/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <style id="css_transition_duration"></style>
     <style>
@@ -33,7 +33,7 @@
             text-align: center;
             margin-top: 10px;
             margin-left: 20px;
-            margin-bottom: 14px;
+            margin-bottom: 20px;
         }
         .cover_img{
             width: 100%;
@@ -55,7 +55,7 @@
         }
         hr{
             background-color: lightgray;
-            height: 2px;
+            height: 1.5px;
             border: none;
             margin: 8px 0;
         }
@@ -176,6 +176,7 @@
 </head>
 <body>
     <div id="divmain" class="main">
+        <script> divmain.style.display = 'none' </script>
         <div id="divmain3" style="overflow: hidden;">
             <!-- /IMG_20200807_190325.jpg -->
             <a href="https://m.ccw.site/user_projects_assets/025375563ccdfbb3e07be18451a5b7b2.jpg" target="_blank" rel="noopener">
@@ -191,8 +192,7 @@
                 </a>
             </div>
             <p style="font-size: 26px; margin: 8px auto 8px;"> 半岛的蒟蒻bddjr </p>
-            <p style="font-size: 14px; margin: 0 auto; color:#888;"> “唯有理智最为可贵” </p>
-            <hr/>
+            <p style="font-size: 14px; margin: 0 auto 8; color:#888;"> “唯有理智最为可贵” </p>
             <div id="divlinks" class="divlinks">
                 <fieldset class="fieldset_1">
                     <legend align="center">账号</legend>
@@ -240,20 +240,16 @@
                     </div>
                 </fieldset>
             </div>
-            <hr/>
-            <p id="Copyright" class="Copyright"> Copyright © 2023 bddjr. </p>
-            <a href="https://github.com/bddjr/bddjr.cn" target="_blank" rel="noopener" class="a_repository"> 源码仓库 </a>
+            <footer id="footer"></footer>
+            <script src="/footer.js"></script>
+            
         </div>
     </div>
+
     <script>
-        {
-            let year = new Date().getFullYear();
-            if( year != 2023 ) Copyright.innerHTML = Copyright.innerHTML.replace('2023', `2023-${year}`);
-        }
+        divmain.style.display = '';
         cover_img.style.height = cover_img.clientWidth / 2 ; // 960 * 480 ;
-
         divmain.style.height = divmain.clientHeight;
-
         (window.onresize = ()=>{
             divmain.style.bottom =
                 (window.innerHeight <= divmain.clientHeight)
@@ -261,7 +257,6 @@
                 : 0
             ;
         })();
-
         css_transition_duration.innerHTML = '*{transition-duration: 0.18s}';
     </script>
 </body>
