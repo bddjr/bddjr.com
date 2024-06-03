@@ -1,0 +1,205 @@
+* {
+	font-family: system-ui;
+	color-scheme: light dark;
+}
+
+body {
+	background-color: #7ac3fb;
+	margin: 0;
+	display: flex;
+	height: 100%;
+}
+
+.main {
+	background-color: #ffffffd6;
+	width: 320px;
+	border-radius: 20px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.main2 {
+	height: auto;
+	text-align: center;
+	margin: 16px;
+}
+
+.cover_img {
+	width: 100%;
+	background-color: gray;
+	cursor: zoom-in;
+}
+
+.avatar {
+	border-radius: 20px;
+	width: 112;
+	height: 112;
+}
+
+.avatar_a {
+	overflow: hidden;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.avatar_img {
+	background-color: gray;
+	cursor: zoom-in;
+}
+
+hr {
+	background-color: lightgray;
+	height: 1.5px;
+	border: none;
+	margin: 8px 0;
+}
+
+.fieldset_1 {
+	border-style: solid;
+	border-radius: 16px;
+	border-color: #7cbbff;
+	padding: 4px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 4px;
+}
+
+.fieldset_1>legend {
+	background-color: #a3d6ff;
+	border-radius: 8px;
+	padding: 4px 10px;
+	font-size: 20px;
+	color: black;
+}
+
+.fieldset_1>div{
+	display: flex;
+	gap: 4px;
+	width: 100%;
+}
+
+.a_button {
+	border-radius: 11px;
+	border: none;
+	margin: 0;
+	font-size: 20px;
+	transition-duration: 0.18s;
+	width: calc(50% - 4px);
+	height: 48px;
+	cursor: pointer;
+	border: 1.5px solid #0072eb;
+	overflow: hidden;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button_default {
+	background-color: #0000;
+}
+
+.button_default:hover {
+	background-color: #007bff2d;
+}
+
+.button_default:active {
+	background-color: #007bff4f;
+}
+
+.a_button>img {
+	height: 32px;
+}
+
+.button_ccw {
+	background-color: #373737;
+}
+
+.button_ccw:hover {
+	background-color: #292929;
+}
+
+.button_ccw:active {
+	background-color: #1b1b1b;
+}
+
+a {
+	text-decoration: none;
+}
+
+.a_repository {
+	text-decoration: underline;
+	color: #888;
+	font-size: 14px;
+}
+
+.a_repository:hover {
+	color: #555;
+}
+
+.a_repository:active {
+	color: #111;
+}
+
+footer style {
+	display: none;
+}
+
+footer * {
+	font-size: 14px;
+	color: #888;
+	margin: 4 3 4;
+	display: block;
+}
+
+footer {
+	margin: 8 auto 0;
+}
+
+footer a {
+	text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #153a55;
+		margin: 0;
+	}
+
+	p {
+		color: #fff;
+	}
+
+	.main {
+		background-color: #00000099;
+	}
+
+	hr {
+		background-color: gray;
+	}
+
+	.button_1 {
+		outline-color: #004289;
+	}
+
+	.button_default {
+		background-color: #d5e8ffdf;
+	}
+
+	.button_default:hover {
+		background-color: #b8d8ffdf;
+	}
+
+	.button_default:active {
+		background-color: #95c5ffdf;
+	}
+
+	.fieldset_1 {
+		border-color: #3b5878;
+	}
+
+	.fieldset_1>legend {
+		background-color: #52728c;
+		color: #fff;
+	}
+}
